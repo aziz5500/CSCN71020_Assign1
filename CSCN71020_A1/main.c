@@ -1,10 +1,10 @@
 #include <stdio.h>
-
+extern
 void printWelcomeMenu();
 void printOptions();
 void add();
 void subtract();
-
+    
 
 void main() {
 
@@ -20,7 +20,7 @@ void main() {
 	switch (inputNum)
 	{
 	case 1:
-		add();
+		 add();
 	case 2:
 		subtract();
 	}
@@ -55,5 +55,6 @@ void subtract() {
 	num1 = 0;
 	num2 = 42;
 
-	int result = num2 / num1;
+	int result = num2 - num1;
+	printf("%d-%d=%d\n", num2, num1, result);
 }
